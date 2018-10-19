@@ -13,3 +13,13 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
+WebUI.openBrowser('')
+
+WebUI.navigateToUrl('https://www.google.com/?gws_rd=ssl')
+
+WebUI.setText(findTestObject('Object Repository/Page_Google/input_concat(Empezar a escucha'), 'distopia saga')
+
+WebUI.click(findTestObject('Object Repository/Page_Google/input_s_btnK'))
+
+WebUI.closeBrowser()
+
